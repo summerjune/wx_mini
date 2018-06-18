@@ -1,0 +1,53 @@
+/**index.wxss**/
+.container {
+  width: 100%;
+  /* height: 1000rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: #999999;
+} 
+
+#header{
+  width: 100%;
+  height: 300rpx;
+  background-color: #C9DAD9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.bgimg{
+  display: block;
+  width: 750rpx;
+  height: 300rpx;
+}
+
+.personalimg{
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+  position: absolute; 
+  margin-top: 80rpx;
+  margin-left: -150rpx;
+}
+
+.telimg{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute; 
+  margin-top: -100rpx; 
+  margin-left: 10rpx;   
+}
+
+#contenter{
+  width: 100%;
+  height: 1700rpx;
+  background-color: #FFFFFF;
+}

@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#006C45",
+    "navigationBarTitleText": "Life go go GO!",
+    "navigationBarTextStyle": "white"
+  }
+}
