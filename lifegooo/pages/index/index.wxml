@@ -1,11 +1,41 @@
 <!--index.wxml-->
 <view class="container">
   <view id="header">
-    <image class="bgimg" mode="aspectFit" src="./img/bg.png"></image>
-    <image class="personalimg" mode="aspectFit" src="./img/personal.png"></image>
+    <image class="bgImg" mode="aspectFit" src="./img/bg.png"></image>
+    <image class="personalImg" mode="aspectFit" src="./img/personal.png"></image>
     <view bindtap="tel">
-      <image class="telimg" mode="aspectFit" src="./img/tel.png"></image>
+      <image class="telImg" mode="aspectFit" src="./img/tel.png"></image>
     </view>
   </view>
-  <view id="contenter"></view>
+  <view id="content">
+    <swiper>
+      <swiper-item>
+        <view class="sheet">
+          <view class="contentHeader">
+            <image class="contentHeaderImg" src="./img/1.png"></image>
+          </view>
+          <view class="textSelection">
+            <block wx:for="{{stringArray[0]}}">
+              <text class="{{item.styleClass}}">{{item.str}}</text>
+            </block>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="sheet">
+          <view class="contentHeader">
+            <image class="contentHeaderImg" src="./img/2.png"></image>
+          </view>
+          <view class="contentImg">
+            <image class="companyImg" mode="aspectFit" src="./img/enc.jpg"></image>
+          </view>
+          <view class="textSelection">
+            <block wx:for="{{stringArray[1]}}">
+              <text class="{{item.styleClass}}">{{item.str}}</text>
+            </block>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
 </view>
